@@ -1,0 +1,405 @@
+/*@author:Ganesh_palli*/
+/*Header-14*/
+/*Mail:palliganesh0242@gmail.com*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: darkblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+#navbar{
+    display: flex;
+    top:0;
+    left: 0;
+    width: 100%;
+    background:transparent;
+    display: flex;
+    padding: 20px 5%;
+    justify-content: space-between;
+}
+#navbar ul{
+    width:100%;
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    padding-left: 28%;
+    padding-right: 5%;
+}
+#navbar ul li{
+    display: inline-block;
+    padding-right: 5%;
+    padding-top: 5%;
+   
+}
+#navbar ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: .3s;
+    animation-name: navmove;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+#startup{
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 2%;
+    padding-left: 10%;
+    white-space: nowrap;
+}
+@media screen and (max-width:768px){
+    #navbar ul{
+        width:50%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-left: 20%;
+        padding-right: 5%;
+    }
+    #navbar ul li{
+        display: inline-block;
+        padding-right: 5%;
+        padding-top: 5%;
+       
+    }
+    #navbar ul li a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: 400;
+        transition: .3s;
+    }
+    #startup{
+        display: inline-block;
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 2%;
+        padding-left: 0%;
+        white-space: nowrap;
+    }
+    
+}
+#button1{
+    padding:8px 30%;
+    border:10px 25px 3px transparent;
+    border-radius:30px;
+    background:#E75480;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    #button1{
+        padding:6px 25%;
+        border:10px 25px 3px transparent;
+        border-radius:30px;
+        background:#E75480;
+        cursor: pointer;
+    }
+}
+#navbar ul li a:hover{
+    color: lightgrey;
+    opacity: 60%;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap');
+
+#content h3{
+    font-size: 60px;
+    font-family:'DM Sans', sans-serif;
+    color: white;
+    position: relative;
+    margin-top:8%;
+    margin-left:15%;
+    font-weight: 700;
+    width:30%;
+}
+#content h4{
+    color: white;
+    font-size: 22px;
+    width:21%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15%;
+    font-weight: 400;
+
+}
+@media screen and (max-width:768px){
+    #content h3{
+        font-size: 30px;
+        font-family:'DM Sans', sans-serif;
+        color: white;
+        position: relative;
+        margin-top:8%;
+        margin-left:15%;
+        font-weight: 700;
+        width:80%;
+    }
+    #content h4{
+        color: white;
+        font-size: 22px;
+        width:80%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 15%;
+        font-weight: 400;
+    
+    }
+
+}
+#container{
+    border: 1px 1px 1px transparent;
+    border-radius: 15px;
+    height:600px;
+    width:32%;
+    background: white;
+    position: relative;
+    left:53%;
+    margin-top:-35%;
+}
+#content a{
+    font-size: 18px;
+    color: white;
+    background: #E75480;
+    border: none;
+    border-radius: 50px;
+    padding: 11px 2%;
+    text-decoration: none;
+    margin-top: 15%;
+    position: relative;
+    left:15%;
+    margin-top: 100%;
+}
+
+#signup{
+font-family: 'DM Sans', sans-serif;
+color: #1E0E62;
+font-size: 40px;
+position:absolute;
+left: 27%;
+top:8%;
+}
+#em{
+    border:solid 3px lightgray;
+    border-radius: 50px;
+    padding: 14px 2%;
+    width:60%;
+    display: flex;
+    position: absolute;
+    left:18%;
+    top:23%;
+}
+#em::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: lightgray;
+    position: absolute;
+    left:10%;
+    top:25%;
+    font-weight: 400;
+}
+#pass{
+    border:solid 3px lightgray;
+    border-radius: 50px;
+    padding: 14px 2%;
+    width:60%;
+    display: flex;
+    position: absolute;
+    left:18%;
+    top:35%;
+}
+#pass::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: lightgray;
+    position: absolute;
+    left:10%;
+    top:25%;
+    font-weight: 400;
+}
+#checkbox{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left:20%;
+    top:50%;
+}
+#terms{
+    font-size: 16px;
+    color: lightgray;
+    position: absolute;
+    left:26%;
+    top:50%;
+    display: inline-block;
+}
+#sign{
+    border:solid 3px lightgray;
+    border-radius: 50px;
+    padding: 14px 2%;
+    width:60%;
+    display: flex;
+    position: absolute;
+    left:18%;
+    top:58%;
+    background: blue;
+}
+#sign::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: lightgray;
+    position: absolute;
+    left:40%;
+    top:25%;
+    font-weight: 400;
+    color: white;
+}
+#hr1{
+    color: lightgrey;
+    opacity: 0.5;
+    position: absolute;
+    width:35%;
+    top:72%;
+    left:10%;
+    display: flex;
+}
+#hr2{
+    color: lightgrey;
+    opacity: 0.5;
+    position: absolute;
+    width:35%;
+    top:72%;
+    left:60%;
+    display: flex;
+}
+#or{
+    color: grey;
+    position: absolute;
+    width:35%;
+    top:70%;
+    left:50%;
+    display: flex;
+}
+#twitter{
+    border:solid 3px lightgray;
+    border-radius: 50px;
+    padding: 14px 2%;
+    width:60%;
+    display: flex;
+    position: absolute;
+    left:18%;
+    top:78%;
+    background: #00acee;
+}
+#twitter::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: lightgray;
+    position: absolute;
+    left:32%;
+    top:25%;
+    font-weight: 400;
+    color: white;
+}
+#account{
+    color: grey;
+    font:20px;
+    opacity: 0.8;
+    font-family: 'DM Sans', sans-serif;
+    position: absolute;
+    width:35%;
+    top:90%;
+    left:20%; 
+    text-wrap: nowrap;
+    font-weight: 400;
+}
+#last{
+    color:#40E0D0;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    width:35%;
+    top:90%;
+    left:62%; 
+    text-wrap: nowrap;
+    font-weight: 200; 
+}
+#sign:hover{
+    color: lightgrey;
+    opacity: 60%;
+}
+#twitter:hover{
+    color: lightgrey;
+    opacity: 60%;
+}
+#last:hover{
+    color: lightgrey;
+    opacity: 60%;
+}
+
+#content a:hover{
+    color: lightgrey;
+    opacity: 60%;
+}
+@media screen and (max-width:768px){
+    #container{
+        border: 1px 1px 1px transparent;
+        border-radius: 15px;
+        height:600px;
+        width:80%;
+        background: white;
+        position: relative;
+        left:1%;
+        margin:0 auto;
+    }
+    #content a{
+        font-size: 18px;
+        color: white;
+        background: #E75480;
+        border: none;
+        border-radius: 50px;
+        padding: 11px 2%;
+        text-decoration: none;
+        margin-top: 15%;
+        position: relative;
+        left:50%;
+        margin-top: 100%;
+    }
+    #twitter{
+        border:solid 3px lightgray;
+        border-radius: 50px;
+        padding: 14px 2%;
+        width:60%;
+        display: flex;
+        position: absolute;
+        left:18%;
+        top:78%;
+        background: #00acee;
+    }
+    #twitter::placeholder{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        color: lightgray;
+        position: absolute;
+        left:5%;
+        top:25%;
+        font-weight: 400;
+        color: white;
+    }
+    #sign::placeholder{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        color: lightgray;
+        position: absolute;
+        left:40%;
+        top:25%;
+        font-weight: 400;
+        color: white;
+    }
+}
